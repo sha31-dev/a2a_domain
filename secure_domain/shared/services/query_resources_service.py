@@ -12,7 +12,7 @@ from typing import (
     TypeVar,
     Union,
 )
-from shared.models import (
+from secure_domain.shared.models import (
     QueryModel,
     ResourceModel,
 )

@@ -4,8 +4,8 @@ from pydantic import (
     Field,
 )
 from typing import Optional
-from shared.models.resource_model import ResourceModel
-from shared.types import FileLabels
+from secure_domain.shared.models.resource_model import ResourceModel
+from secure_domain.shared.types import FileLabels
 
 
 class FileModel(ResourceModel):

@@ -8,7 +8,7 @@ from typing import (
     Dict,
     Optional,
 )
-from shared.types import DataLabels
+from secure_domain.shared.types import DataLabels
 
 
 class StructuredDataModel(BaseModel):

@@ -20,11 +20,11 @@ version = "1.0.0"
 repository = "https://github.com/securedotcom/secure_domain"
 
 [tool.poetry]
-package-mode = false
+package-mode = true
 
 [tool.poetry.dependencies]
 python = "^3.12"
-pydantic = "^0.4.2"
+pydantic = "^2.12.4"
 py-query-builder = { git = "https://bitbucket.org/disrupt-open-source/py_query_builder", branch = "master" }
 
 [tool.poetry.group.dev.dependencies]

@@ -1,3 +1,0 @@
-from shared.services.count_resources_service import ICountResourcesService
-from shared.services.query_resources_service import IQueryResourcesService
-from shared.services.retrieve_resource_service import IRetrieveResourceService

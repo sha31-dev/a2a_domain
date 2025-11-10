@@ -7,8 +7,8 @@ from typing import (
     List,
     Optional,
 )
-from shared.models.field_model import FieldModel
-from shared.types import FormLabels
+from secure_domain.shared.models.field_model import FieldModel
+from secure_domain.shared.types import FormLabels
 
 
 class FormModel(BaseModel):

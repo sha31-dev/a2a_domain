@@ -3,7 +3,7 @@ from abc import (
     abstractmethod,
 )
 from typing import Optional
-from shared.models import QueryModel
+from secure_domain.shared.models import QueryModel
 
 
 class ICountResourcesService(ABC):

@@ -10,8 +10,8 @@ from typing import (
     TypeVar,
     Union,
 )
-from shared.models import ResourceModel
-from shared.types import Expression
+from secure_domain.shared.models import ResourceModel
+from secure_domain.shared.types import Expression
 
 
 T = TypeVar("T", bound=Union[ResourceModel, Dict[str, Any]])

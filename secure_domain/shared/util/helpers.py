@@ -10,7 +10,7 @@ from typing import (
     Optional,
     Union,
 )
-from shared.models import (
+from secure_domain.shared.models import (
     FormModel,
     StructuredDataModel,
 )

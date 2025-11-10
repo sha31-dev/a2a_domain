@@ -7,7 +7,7 @@ from typing import (
     List,
     Optional,
 )
-from shared.types import (
+from secure_domain.shared.types import (
     FieldType,
     FieldValue,
 )
