@@ -1,0 +1,68 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+authors = [
+    {name = "Syed Hammad Ahmed", email = "syed.ahmed@secure.com"}
+]
+description = ""
+keywords = ["Domain"]
+license = { file = "LICENSE.txt" }
+maintainers = [
+    {name = "Syed Hammad Ahmed", email = "syed.ahmed@secure.com"}
+]
+name = "secure_domain"
+readme = "README.md"
+version = "1.0.0"
+
+[project.urls]
+repository = "https://github.com/securedotcom/secure_domain"
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^0.4.2"
+py-query-builder = { git = "https://bitbucket.org/disrupt-open-source/py_query_builder", branch = "master" }
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+coverage = "^7.6.1"
+mypy = "^1.11.2"
+pylint = "^3.3.1"
+pytest = "^8.3.4"
+
+[tool.black]
+line-length = 100
+
+[tool.coverage.run]
+branch = true
+omit = [".*", "*/site-packages/*", "*tests*"]
+
+[tool.coverage.report]
+omit = [".*", "*/site-packages/*", "*tests*"]
+fail_under = 90
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pylint]
+fail-under = 9.0
+
+[tool.pylint.messages_control]
+disable = """
+broad-except,
+duplicate-code,
+missing-docstring,
+missing-module-docstring,
+too-few-public-methods,
+too-many-arguments,
+too-many-instance-attributes,
+unbalanced-tuple-unpacking,
+wrong-import-order
+"""
+
+[tool.pylint.format]
+max-line-length = 100

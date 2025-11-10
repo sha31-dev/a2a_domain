@@ -1,0 +1,32 @@
+# Distribution.
+*.egg
+*.egg-info/
+build/
+dist/
+
+# Environment
+*.env
+*.env.*
+!.env.example
+
+# Logs.
+*.log
+logs/
+
+# Python.
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+# Secrets.
+*.key
+*.pem
+*.pub
+
+# Settings.
+.vscode/
+
+# Tests.
+.coverage
+.coverage.*
+.hypothesis
