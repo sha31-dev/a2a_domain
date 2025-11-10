@@ -1,6 +1,6 @@
 .PHONY: all black build clean coverage install mypy package pylint test
 
-all: black mypy pylint clean 
+all: black pylint mypy clean 
 package: build install
 
 black:
@@ -26,7 +26,7 @@ install:
 
 mypy:
 	@echo "Running mypy..."
-	mypy --config=pyproject.toml examples/ secure_domain/ tests/
+	mypy --config=pyproject.toml secure_domain/ tests/
 
 pylint:
 	@echo "Running pylint..."

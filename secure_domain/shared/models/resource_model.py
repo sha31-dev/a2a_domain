@@ -37,8 +37,3 @@ class ResourceModel(BaseModel):
         default=None,
         description="Metadata related to the resource.",
     )
-
-    tags: Optional[str] = Field(
-        default=None,
-        description="Tags associated with the resource.",
-    )
