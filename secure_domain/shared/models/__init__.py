@@ -14,4 +14,3 @@ from secure_domain.shared.models.query_model import (
 )
 from secure_domain.shared.models.resource_model import ResourceModel
 from secure_domain.shared.models.structured_data_model import StructuredDataModel
-from secure_domain.shared.models.tenant_model import TenantModel
