@@ -18,19 +18,19 @@ clean:
 
 coverage:
 	@echo "Running coverage..."
-	coverage run -m --source=secure_domain/ pytest tests/ -v && coverage report -m
+	coverage run -m --source=a2a_domain/ pytest tests/ -v && coverage report -m
 
 install:
 	@echo "Bundling package..."
-	pip install dist/secure_domain-*.tar.gz
+	pip install dist/a2a_domain-*.tar.gz
 
 mypy:
 	@echo "Running mypy..."
-	mypy --config=pyproject.toml secure_domain/ tests/
+	mypy --config=pyproject.toml a2a_domain/ tests/
 
 pylint:
 	@echo "Running pylint..."
-	pylint --rcfile=./pyproject.toml secure_domain/ tests/
+	pylint --rcfile=./pyproject.toml a2a_domain/ tests/
 
 test:
 	@echo "Running unit tests..."

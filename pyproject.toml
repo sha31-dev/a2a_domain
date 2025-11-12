@@ -7,17 +7,17 @@ authors = [
     {name = "Syed Hammad Ahmed", email = "syed.ahmed@secure.com"}
 ]
 description = ""
-keywords = ["Domain"]
+keywords = ["A2A", "Domain"]
 license = { file = "LICENSE.txt" }
 maintainers = [
     {name = "Syed Hammad Ahmed", email = "syed.ahmed@secure.com"}
 ]
-name = "secure_domain"
+name = "a2a_domain"
 readme = "README.md"
 version = "1.0.0"
 
 [project.urls]
-repository = "https://github.com/securedotcom/secure_domain"
+repository = "https://github.com/securedotcom/a2a_domain"
 
 [tool.poetry]
 package-mode = true
