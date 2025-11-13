@@ -26,8 +26,8 @@ class MessageModel(ResourceModel):
         description="ID of the thread the message belongs to.",
     )
 
-    content: List[Content] = Field(
-        description="Content of the message, each being a different type.",
+    parts: List[Content] = Field(
+        description="Content parts of the message, each being a different type.",
     )
 
     role: MessageRole = Field(
