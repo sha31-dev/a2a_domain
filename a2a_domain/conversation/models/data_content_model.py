@@ -7,11 +7,11 @@ from typing import Literal
 from a2a_domain.shared.models import StructuredDataModel
 
 
-class DataMessageModel(BaseModel):
+class DataContentModel(BaseModel):
     """
     Represents structured data exchanged between the actors.
-    This message part is used to send or receive structured data objects such as execution outputs,
-    query results, form submissions, serialized Pydantic models etc.
+    Used to send or receive structured data objects such as execution outputs, query results, form
+    submissions, serialized Pydantic models etc.
     """
 
     model_config = ConfigDict(extra="forbid")

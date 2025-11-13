@@ -19,7 +19,6 @@ from py_query_builder.types import (
 FieldType = Literal["boolean", "datetime", "list", "number", "object", "string"]
 FieldValue = Union[bool, datetime, Dict[str, Any], int, List[Any], str]
 
-
 DataLabels = Literal[
     "ActionItem",  # Used for structured data containing a single action item.
     "ActionItems",  # Used for structured data containing a list of action items.

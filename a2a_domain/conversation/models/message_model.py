@@ -7,7 +7,7 @@ from typing import (
 )
 from uuid import uuid4
 from a2a_domain.conversation.types import (
-    MessagePart,
+    Content,
     MessageRole,
     MessageType,
 )
@@ -26,7 +26,7 @@ class MessageModel(ResourceModel):
         description="ID of the thread the message belongs to.",
     )
 
-    parts: List[MessagePart] = Field(
+    content: List[Content] = Field(
         description="Content of the message, each being a different type.",
     )
 

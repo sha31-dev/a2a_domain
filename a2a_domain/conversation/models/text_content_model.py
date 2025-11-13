@@ -9,10 +9,10 @@ from typing import (
 )
 
 
-class TextMessageModel(BaseModel):
+class TextContentModel(BaseModel):
     """
     Represents a plain text message exchanged between actors.
-    This message part is used for natural language communication between actors.
+    Used for natural language communication between actors.
     It may also include reasoning traces if the agent exposes its thought process or rationale.
     """
 
